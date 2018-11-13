@@ -1,7 +1,27 @@
 // *************************** YOUR CODE BELOW *******************************
 
 $("#shoot").click(function() {
-    $("#userChoice").text($("#input").val());
+  userChoice = $("input").val()
+  var randomNumber = Math.random()
+    $("#userChoice").text(userChoice)
+    
+    if(randomNumber> .80) {
+        $("#computerChoice").text("Rock"); 
+    }
+    
+       else if(randomNumber <.80 && randomNumber>.50) {
+        $("#computerChoice").text("Paper"); 
+    }
+    
+       else{
+        $("#computerChoice").text("Scissor"); 
+    }
+    
+    
+    
+    
+    
+    
 });
 
 
@@ -13,6 +33,13 @@ $("#shoot").click(function() {
 
 //GLOBAL VARIABLES
 /* global $ */
+
+
+var userChoice = " "
+
+var computerChoice =""
+
+var winner = " "
 
 
 
